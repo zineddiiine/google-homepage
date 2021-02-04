@@ -6,33 +6,55 @@
     <link rel="stylesheet" href="cssreset.css">
     <link rel="stylesheet" href="style.css">
     <title>Google</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="Images/icon.jpg">
+    <link rel="stylesheet" href="Styles/cssreset.css">
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-    <main>
-        <nav class="nav-bar">
-            <ul>
-                <li class="nav-list"><a href="https://www.google.com/intl/ru/gmail/about/#">Gmail</a></li>
-                <li class="nav-list"><a href="https://www.google.ru/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-                <button class="nav-list"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.ru%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sing in</a></button>
-            </ul>
-        </nav>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google_logo" srcset="">
-        <div class="search-bar">
-            <input type="search">
-            <button class="search-btn">Google Search</button>
-            <button class="search-btn">I'm Feeling Lucky</button>
+    <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img src="Images/g-menu.PNG" alt="menu icon">
+        <button>Sign in</button>
+    </nav>
+    <section class="section-1">
+        <img src="Images/googlelogo_color_272x92dp.png" alt="logo" class="logo">
+        <form>
+            <div class="s-box">
+                <img src="Images/search.svg" alt="" class="search-icon">
+                <input type="text" class="s-input">
+                <img src="Images/vs.png" alt="" class="vs-icon">
+                <input type="submit" class="s-btn" value="Google Search">
+                <input type="submit" class="s-btn" value="I'm Feeling Lucky">
+            </div>
+        </form>
+        <div class="lang">
+            Google offered in:
+            <a href="#">Arabic</a>
+            <a href="#">Russian</a>
         </div>
-        <footer class="footer">
-            <ul>
-                <li class="footer-list"><a href="#">Advertising</a></li>
-                <li class="footer-list"><a href="#">Business</a></li>
-                <li class="footer-list"><a href="#">About</a></li>
-                <li class="footer-list"><a href="#">How Search works</a></li>
-                <li class="footer-list"><a href="#">Privacy</a></li>
-                <li class="footer-list"><a href="#">Terms</a></li>
-                <li class="footer-list"><a href="#">Settings</a></li>
-            </ul>
-        </footer>
-    </main>
+    </section>
+    <footer>
+        <h4>Algeria</h4>
+        <div class="links">
+            <div class="link-1">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="link-2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
