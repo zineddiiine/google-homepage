@@ -32,15 +32,15 @@ nav a:hover{
 }
 
 nav img{
-    background-color: blue;
     cursor: pointer;
     border-radius: 2px;
-    width: 25px;
+    width: 26px;
     margin: auto 15px;
+    opacity: .6;
 }
 
 nav img:hover{
-    opacity: 0.8;
+    opacity: 1;
 }
 
 nav button{
@@ -70,21 +70,133 @@ nav button:hover{
 }
 
 .s-box{
-    width: 580px;
-    margin: 0px auto;
-    position: relative;
-    margin-top: -8px;
-    text-align: center;
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 35px;
+    row-gap: 25px;
+    grid-template-areas: 
+    ". search ."
+    ". btns .";
 }
 
 .s-input{
-    display: block;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    color: rgba(0, 0 , 0, 0.87);
-    font-size: 16px;
-    padding: 13px;
-    padding-left: 45px;
-    width: 100%;
+    grid-area: search;
+    width: 480px;
+    height: 47px;
+    text-align: start;
+    padding: 0px 50px;
+    border-radius: 50px;
     outline: none;
+    font-size: 16px;
+    border: 1px solid rgb(230, 227, 227);
+}
+
+.s-input:hover{
+    box-shadow: 0px 1.3px 7px #c5c5c5;
+    border-color: #bec0c2;
+    width: 481px;
+}
+
+.vs-icon{
+    grid-area: search;
+    width: 15px;
+    margin-right: 21px;
+    margin-top: 13px;
+    position: relative;
+    justify-self: self-end;
+    cursor: pointer;
+}
+
+.search-icon{
+    grid-area: search;
+    position: relative;
+    justify-self: self-start;
+    width: 22px;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.s-btnS{
+    grid-area: btns;
+    position: relative;
+    justify-self: self-start;
+    margin-left: 100px;
+    padding: 0px 17px;
+}
+
+.s-btnL{
+    position: relative;
+    justify-self: self-end;
+    grid-area: btns;
+    margin-right: 100px;
+    padding: 0px 17px;
+}
+
+.s-btnS, .s-btnL{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    outline: none;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    
+}
+
+.hov:hover{
+    border: 1.1px solid #d8dee4;
+}
+
+.lang{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgba(230, 227, 227, .5);
+    margin-top: 100px;
+}
+
+footer h4{
+    padding: 10px 0px 10px 30px;
+    border-top: 1px solid rgba(128, 128, 128, .21);
+    border-bottom: 1px solid rgba(128, 128, 128, .21);
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5px 10px;
+    font-size: 15px;
+}
+
+.link-1{
+    justify-items: start;
+    padding: 10px 10px;
+}
+
+.link-2{
+    justify-items: start;
+    padding: 10px 10px;
+}
+
+.links div a{
+    color: rgba(0,0,0,.54);
+    padding: 10px 10px;
+}
+
+.links div a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .links{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
 }
